@@ -1,4 +1,6 @@
+import os
 import discord
+
 from discord.ext import commands
 from discord import app_commands
 
@@ -202,4 +204,5 @@ async def avaliar(interaction: discord.Interaction, atendimento: int, rapidez: i
     await interaction.response.send_message(embed=embed)
 
 
-bot.run("MTQ5Nzc3NTE5NTY4MTcyMjM2OA.GYpnHu.YqDzrq3vGWVhYGQUN7RDDEOVGOzPErtjEqsS1E")
+bot.run(os.getenv("DISCORD_TOKEN"))
+
